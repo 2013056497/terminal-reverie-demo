@@ -1,2 +1,2 @@
-# terminal-reverie-demo
-terminal reverie remade in godot engine.
+# Terminal Reverie Demo
+terminal reverie (https://github.com/mrrazonj/TextRPG) remade in godot engine.
