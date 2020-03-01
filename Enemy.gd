@@ -1,13 +1,13 @@
 extends Node2D
 
-var hp = 100 setget set_hp
+var hp = 100 setget set_enemy_hp
 
 onready var hplabel = $HPLabel
 onready var animation_player = $AnimationPlayer
 
 signal death
 
-func set_hp(new_hp):
+func set_enemy_hp(new_hp):
 	hp = new_hp
 	hplabel.text = str(hp) + "HP"
 	
@@ -16,5 +16,3 @@ func set_hp(new_hp):
 		queue_free()
 	else:
 		animation_player.play("Shake")
-		yield(animation_player, "animation_finished")
-		animation_player.play("Attack")
